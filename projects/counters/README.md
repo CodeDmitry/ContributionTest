@@ -1,6 +1,6 @@
 # Counters
 
-For this Contribution Test, I want you to do the following for a specific programming language:
+For this Contribution Test, I want you to do the following in any single programming language:
 
 1. nothing: Do nothing. Time the runtime.
 2. count8: Count to 0xff, no printing. Time the runtime.
