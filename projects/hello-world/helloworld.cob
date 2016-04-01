@@ -11,8 +11,9 @@
         DATA DIVISION.
         WORKING-STORAGE SECTION.
         01 hello-world PIC X(20)
-           VALUE IS "Hello, World!".
+            VALUE IS "Hello, World!".
 
         PROCEDURE DIVISION.
             DISPLAY hello-world.
+
             STOP RUN.
