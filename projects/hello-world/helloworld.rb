@@ -11,9 +11,9 @@ def main(argv)
         return 1
     end
 
-    argv.each { |arg|
+    argv.each do |arg|
         print arg + ' '
-    }
+    end
 
     print "\n"
 
