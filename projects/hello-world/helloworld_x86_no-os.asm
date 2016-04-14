@@ -1,9 +1,9 @@
-;+---------------------------------------------------------------------------------------------------------------------------------+
-;| [code-columns: 132]                                                                                                             |
-;| A Hello World bootloader in Netwide Assembly(NASM).                                                                             |
-;| Written by Dmitry Makhnin.                                                                                                      |
-;| see http://fisnikhasani.com/building-your-own-bootloader/                                                                       |
-;+---------------------------------------------------------------------------------------------------------------------------------+
+;+--------------------------------------------------------------------------------------------------+
+;| [code-columns: 100]                                                                              |
+;| A Hello World bootloader in Netwide Assembly(NASM).                                              |
+;| Written by Dmitry Makhnin.                                                                       |
+;| see http://fisnikhasani.com/building-your-own-bootloader/                                        |
+;+--------------------------------------------------------------------------------------------------+
     bits    16
     org     0x7c00
 
