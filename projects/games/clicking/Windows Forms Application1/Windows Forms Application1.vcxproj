@@ -14,7 +14,7 @@
     <ProjectGuid>{DE44B8EF-13D6-4F6F-8E00-A0AEB1207ED0}</ProjectGuid>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>Windows_Forms_Application1</RootNamespace>
+    <RootNamespace>TheClickRaceGame</RootNamespace>
     <ProjectName>The Click Race Game</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
