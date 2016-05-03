@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Viewing page source with XMLHttpRequest</title>
+<meta charset="utf-8">
+
+<script>
+var xhr = null;
+var sourceContainer = null;
+var gen = null;
+
+window.onload = function() {
+    xhr = new XMLHttpRequest();
+    if (xhr == null) {
+        alert('could not create XMLHttpRequest object.');
+    }
+
+    sourceContainer = document.getElementById('sourceContainer');
+    if (sourceContainer == null) {
+        alert('could not obtain handle to sourceContainer object.');
+    }
+    
+    gen = document.getElementById('gen');
+};          
+
+function load_source() 
+{
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {  
+            sourceContainer.textContent = xhr.responseText;   
+            gen.setAttribute('href', 'data: text/html, ' + xhr.responseText);                
+        }
+    };
+
+    xhr.open('GET', 'viewsource.html', true);
+    xhr.send();   
+}
+
+</script>
+</head>
+<body>
+  <pre id="sourceContainer"></pre>
+  <button onclick="load_source()">Click me to load source</button>
+  <a id="gen">e</a>
+</body>
+</html>
